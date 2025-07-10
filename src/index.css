@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+* {
+  color: #fff;
+   scroll-behavior: smooth;
+}
+body {
+  background: #010103;
+  font-family: "General Sans", sans-serif;
+}
+
+@theme {
+  --breakpoint-xs: 30rem;
+  --breakpoint-2xl: 100rem;
+  --breakpoint-3xl: 120rem;
+}
+
+#tasklist::-webkit-scrollbar {
+  background-color: transparent;
+  height: 5px;
+  /* display: none; */
+}
+#tasklist::-webkit-scrollbar-thumb {
+  background-color: rgb(143, 143, 143);
+  border-radius: 50px;
+}
+
+.waving-hand {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+/* keyframes  */
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(14deg);
+  }
+  30% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(14deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
